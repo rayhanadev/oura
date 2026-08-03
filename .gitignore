@@ -1,0 +1,10 @@
+/target
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+*.db
+*.db-*
+*.key
+*.log
+.oura/
