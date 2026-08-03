@@ -1,0 +1,44 @@
+[package]
+name = "oura-cli"
+version = "0.1.0"
+edition = "2024"
+authors = ["Rayhan Noufal Arayilakath <me@rayhanadev.com>"]
+description = "Private, local-first Oura Ring sync over Bluetooth"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/rayhanadev/oura-cli"
+homepage = "https://github.com/rayhanadev/oura-cli"
+keywords = ["oura", "bluetooth", "health", "turso", "cli"]
+categories = ["command-line-utilities", "database"]
+publish = false
+build = "build.rs"
+
+[[bin]]
+name = "oura"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1.0"
+blake3 = "1.8"
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+clap = { version = "4.6", features = ["derive"] }
+directories = "6.0"
+fs2 = "0.4"
+hex = "0.4"
+libc = "0.2"
+oura-link = { git = "https://github.com/Th0rgal/open_oura.git", rev = "c5106bd5674dd98f07954b96dff9e16c8fe26f06" }
+oura-protocol = { git = "https://github.com/Th0rgal/open_oura.git", rev = "c5106bd5674dd98f07954b96dff9e16c8fe26f06" }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.52", features = ["full"] }
+toml = "0.9"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+turso = { version = "=0.8.0-pre.2", default-features = false }
+
+[dev-dependencies]
+tempfile = "3.20"
+
+[profile.release]
+lto = "thin"
+strip = true

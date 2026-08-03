@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleIdentifier</key>
+    <string>com.rayhanadev.oura-cli-sync</string>
+    <key>CFBundleName</key>
+    <string>Oura CLI</string>
+    <key>CFBundleDisplayName</key>
+    <string>Oura CLI</string>
+    <key>CFBundleVersion</key>
+    <string>@VERSION@</string>
+    <key>CFBundleShortVersionString</key>
+    <string>@VERSION@</string>
+    <key>LSBackgroundOnly</key>
+    <true/>
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>Oura CLI uses Bluetooth to copy health measurements from your Oura Ring to your private local database.</string>
+</dict>
+</plist>

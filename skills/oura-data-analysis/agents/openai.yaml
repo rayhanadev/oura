@@ -1,0 +1,4 @@
+interface:
+  display_name: "Oura Health Snapshot"
+  short_description: "Summarize local recovery, sleep, and activity"
+  default_prompt: "Use $oura-data-analysis to give me a concise health snapshot from my latest local ring data."
