@@ -31,7 +31,7 @@ oura-protocol = { git = "https://github.com/Th0rgal/open_oura.git", rev = "c5106
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 tokio = { version = "1.52", features = ["full"] }
-toml = "0.9"
+toml = "1.1"
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 turso = { version = "=0.8.0-pre.2", default-features = false }
